@@ -10,6 +10,11 @@ mongoose.connect(mongoURL,{
     useNewUrlParser:true,
     UseUnifiedTopology:true
 })
+// mongoose.connect(mongoURL, {
+//     tls: true, // Ensure TLS/SSL is enabled
+//   })
+//     .then(() => console.log("Connected to MongoDB server"))
+//     .catch((err) => console.log("MongoDB connection error", err));
 
 const db=mongoose.connection;
 
